@@ -1,0 +1,157 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel='stylesheet' href='https://cdn-uicons.flaticon.com/2.6.0/uicons-regular-straight/css/uicons-regular-straight.css'>
+    <link rel="stylesheet" href="/styles/reset.css">
+    <link rel="stylesheet" href="/styles/home.css">
+    <link
+        rel="stylesheet"
+        href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css"
+    />
+    <!--Tab Options-->
+    <title>PALATE</title>
+    <link rel="icon" href="/assets/PALATE.png">
+</head>
+<!--Navegation Tab-->
+<header class="header">
+    <img src="/assets/PALATE.png" alt="PALATE logo" class="header__logo">
+    <div class="header__navs">
+        <a href="#" class="nav">About Us</a>
+        <a href="#" class="nav">Available Locations</a>
+        <a href="#" class="nav">Reserve</a>
+    </div>
+    <i class="fi fi-rs-search" style="padding: 2em;" ></i>
+</header>
+<!--Sections-->
+<body>
+    <!-- Spacement for background row -->
+    <div class="parallax"></div>
+    <div class="sections">
+        <!-- Flex-row division -->
+        <div class="pushup">
+        <img src="/assets/pushup.png" alt="" >
+    </div>
+    <section class="section1">
+        <img src="/assets/PALATEFULL.png" alt="PALATE logo" class="section1__logo">
+        <!-- Flex-column content -->
+        <div class="section1__content">
+        <h1 class="section1__title">About Us</h1>
+        <p class="section1__text">We are a chain of restaurants that seeks to establish a variety of cultural dishes from different regions of the world, without losing elegance and accessibility.</p>
+        </div>
+    </section>
+    <!-- Flex-row division -->
+    <section class="section2">
+        <!-- Flex-column content -->
+        <div class="section2__content">
+            <h1 class="section2__title">Customers' health</h1>
+            <p class="section2__text">Health is one of our core values. All our dishes use the freshest ingredients from the original recipes. No added preservatives or coloring to make it look pretty!</p>
+        </div>
+        <!-- Spacement for background row -->
+        <div class="section2__img"></div>
+    </section>
+        <section class="section3">
+
+            <h1 class="section3__title">Weekly Dishes</h1>
+                        <!-- Slider main container -->
+            <div class="swiper">
+                <!-- Additional required wrapper -->
+                <div class="swiper-wrapper">
+                <!-- Slides -->
+                <div class="swiper-slide">
+                    <img src="/assets/weekplate1.png" alt="">
+                    <div class="slider-content">
+                        <h1 class="slider-text slider-title">America!</h1>
+                        <p class="slider-text slider-desc">Who doesn't love a fry-up? Typical American dishes.</p>
+                        <p class="slider-text slider-p">29 - 5</p>
+                    </div>
+                </div>
+                <div class="swiper-slide">
+                    <img src="/assets/weekplate2.png" alt="">
+                    <div class="slider-content">
+                        <h1 class="slider-text slider-title">Terra Adorada</h1>
+                        <p class="slider-text slider-desc">Typical plates from Brazil! Oh hell yeah!</p>
+                        <p class="slider-text slider-p">6 - 12</p>
+                    </div>
+                </div>
+                <div class="swiper-slide">
+                    <img src="/assets/weekplate3.png" alt="">
+                    <div class="slider-content">
+                        <h1 class="slider-text slider-title">Kangaroo</h1>
+                        <p class="slider-text slider-desc">Typical dishes from Australia. Does not contain spiders.</p>
+                        <p class="slider-text slider-p">13 - 19</p>
+                    </div>
+                </div>
+                <div class="swiper-slide">
+                    <img src="/assets/weekplate4.png" alt="">
+                    <div class="slider-content">
+                        <h1 class="slider-text slider-title">Favoloso</h1>
+                        <p class="slider-text slider-desc">Typical dishes from Italy. Mama mia!</p>
+                        <p class="slider-text slider-p">20 - 26</p>
+                    </div>
+                </div>
+                <div class="swiper-slide">
+                    <img src="/assets/weekplate5.png" alt="">
+                    <div class="slider-content">
+                        <h1 class="slider-text slider-title">Eда</h1>
+                        <p class="slider-text slider-desc">Typical dishes from Great Mother Russia.</p>
+                        <p class="slider-text slider-p">27 - 2</p>
+                    </div>
+                </div>
+                </div>
+                <!-- scrollbar -->
+                <div class="swiper-scrollbar"></div>
+            </div>
+
+
+        </section>
+        <section class="section4">
+            <img src="" alt="">
+        </section>
+        <footer>
+            <img src="/assets/slogan.png" alt="">
+            <div>
+            <a href="">Github</a>
+            <a href="">User Terms</a>
+            <a href="">Trademark Policies</a>
+            <a href="">Help</a>
+            </div>
+            <p href="">® 2024 Palate or PTE. All rights are not reserved, and if some idiot uses this as a brand template I won't be able to do anything about it. </a>
+        </footer>
+    </div>
+    <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
+    <script>
+        const swiper = new Swiper('.swiper', {
+
+            slidesPerView: 3,
+            spaceBetween: 30,
+            centeredSlides: true,
+            mousewheel: true,
+            effect: "coverflow",
+
+
+          // Optional parameters
+          direction: 'horizontal',
+          loop: false,
+      
+          // If we need pagination
+          pagination: {
+            el: '.swiper-pagination',
+          },
+      
+          // Navigation arrows
+          navigation: {
+            nextEl: '.swiper-button-next',
+            prevEl: '.swiper-button-prev',
+          },
+      
+          // And if we need scrollbar
+          scrollbar: {
+            el: '.swiper-scrollbar',
+          },
+        });
+      </script>
+</body>
+
+</html>
